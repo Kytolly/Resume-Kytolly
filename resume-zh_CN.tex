@@ -4,59 +4,70 @@
 
 \documentclass{resume}
 \usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-% \usepackage{NotoSansSC_external}
-% \usepackage{NotoSerifCJKsc_external}
-% \usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
 \usepackage{linespacing_fix} % disable extra space before next section
 \usepackage{cite}
 
 \begin{document}
 \pagenumbering{gobble} % suppress displaying page number
 
-\name{你的大名}
+\name{谢卿云}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{kytolly.xqy@gmail.com} \textperiodcentered\ 
+  \phone{19828127947} \textperiodcentered\ 
+  \github[Kytolly]{https://github.com/Kytolly} \textperiodcentered\
+  \homepage[kytolly.blog]{ https://kytolly.blog/}  \textperiodcentered\
+  \faTransgender[男]  \textperiodcentered\
+  \faBirthdayCake[01/16/2005]
+}
  
-\section{\faGraduationCap\  教育背景}
-\datedsubsection{\textbf{上海交通大学}, 上海}{2013 -- 至今}
-\textit{在读硕士研究生}\ 信息与通信工程, 预计 2016 年 3 月毕业
-\datedsubsection{\textbf{西安电子科技大学}, 西安, 陕西}{2009 -- 2013}
-\textit{学士}\ 通信工程
+\section{\faGraduationCap\ 背景}
+\datedsubsection{\textbf{电子科技大学}, 成都, 四川}{2022 -- 2026}
+\textit{本科在读}\ 计算机科学与工程(网络空间与安全) “互联网+”复合型精英人才双学位培养计划\\
+\textit{计算机科学与技术} +  \textit{数据科学与大数据技术} 「GPA」3.8/4.0 \qaud 「IETLS」NG
 
-\section{\faUsers\ 实习/项目经历}
-\datedsubsection{\textbf{黑科技公司} 上海}{2015年3月 -- 2015年5月}
-\role{实习}{经理: 高富帅}
-xxx后端开发
-\begin{itemize}
-  \item 实现了 xxx 特性
-  \item 后台资源占用率减少8\%
-  \item xxx
+
+\section{\faUsers\ 实习经历}
+\datedsubsection{\textbf{四川华迪信息技术有限公司} (成都)}{2024年7月 -- 8月}
+\role{大数据方向实习} {系统设计工程师}
+\begin{itemize}[parsep=0.5ex]
+    \item 搭建Hadoop分布式文件存储系统和部署Spark计算引擎
+    \item 设计IP代理池构建网络爬虫，完成数据清洗、处理、分析和可视化任务
 \end{itemize}
 
-\datedsubsection{\textbf{分布式科学上网姿势}}{2014年6月 -- 至今}
-\role{Golang, Linux}{个人项目，和富帅糕合作开发}
-\begin{onehalfspacing}
-分布式负载均衡科学上网姿势, https://github.com/cyfdecyf/cow
-\begin{itemize}
-  \item 修复了连接未正常关闭导致文件描述符耗尽的 bug
-  \item 使用Chord 哈希 URL, 实现稳定可靠地分流
-  \item xxx (尽量使用量化的客观结果)
+\datedsubsection{\textbf{电子科技大学智能协同计算技术国家级重点实验室} (成都)}{2025年4月 -- 至今}
+\role{具身智能和机器人方向实习} {系统开发工程师}
+\begin{itemize}[parsep=0.5ex]
+    \item 基于RedisGraph构建SSTKG，利用KAG和Neo4j实现LLM检索增强
+    \item 参与配置Unitree机器狗的环境配置，搭建集成测试平台，协助参与开源论文的复现
+    % ，监控训练过程和调优模型性能；
 \end{itemize}
-\end{onehalfspacing}
 
-\datedsubsection{\textbf{\LaTeX\ 简历模板}}{2015 年5月 -- 至今}
-\role{\LaTeX, Python}{个人项目}
-\begin{onehalfspacing}
-优雅的 \LaTeX\ 简历模板, https://github.com/billryan/resume
-\begin{itemize}
-  \item 容易定制和扩展
-  \item 完善的 Unicode 字体支持，使用 \XeLaTeX\ 编译
-  \item 支持 FontAwesome 4.5.0
+% \section{\faPaperclip\ 论文}
+
+\section{\faCode\ 项目经历}
+\datedsubsection{\textbf{电影评分预测模型}}{https://github.com/Kytolly/BiasSVD-MovieRecommendation}
+\begin{itemize}[parsep=0.5ex]
+    \item 基于BiasSVD算法的，采用Tensorflow框架和SGD优化器的隐语义协同过滤推荐模型
+    \item 数据集3kw条左右，经过多轮交叉验证，MSE稳定在0.7，训练效果显著，较好了复现了原论文
 \end{itemize}
-\end{onehalfspacing}
+
+\datedsubsection{\textbf{基于简化比特币协议的区块链命令行工具}}{https://github.com/Kytolly/BlockchainCLI}
+\begin{itemize}[parsep=0.5ex]
+    \item 实现了工作量证明, 迭代, 持久化，索引, Merkle树, 数字签名和验证, P2P网络通信等典型机制
+    \item 采用BoltDB实现持久化机制，采用Websockets实现服务器节点端到端的通信
+\end{itemize}
+
+\datedsubsection{\textbf{其他}}{}
+\begin{itemize}[parsep=0.5ex]
+    % \item 有多次独立设计前后端分离的Web服务项目经历，如智慧校园物流质询系统(SmartTransitionSystem)和网页线性方程求解器(A-Web-Equation-Solver)等；
+    \item 基于深度强化学习的用于股票量化交易模型,通过分析历史市场数据来学习做出交易决策，以实现长期回报最大化，始终优于SSE50指数基准，超过40\%的年化收益率和100\%累计收益率;
+    % \item 基于PPO算法的腾讯开悟王者荣耀AI智能体的调参和优化，在校天梯赛中取得第一;
+    % \item 参加智能小车生存挑战项目，有嵌入式开发(单片机)的经历，主要负责小车运动模块速度和转向参数和算法的修改；
+    %\item 复现了C++STL的部分容器(记载在个人博客)和人工智能的部分算法(QLearning，DataMining等),性能与标准库/包相当;
+    %\item 开发中的项目：基于LLoneBot和NoneBot的QQ群聊机器人，接入DeepSeek...
+\end{itemize}
 
 % Reference Test
 %\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
@@ -65,25 +76,29 @@ xxx后端开发
 %  \item main contribution
 %\end{itemize}
 
-\section{\faCogs\ IT 技能}
+\section{\faCogs\ 技能}
 % increase linespacing [parsep=0.5ex]
 \begin{itemize}[parsep=0.5ex]
-  \item 编程语言: C == Python > C++ > Java
-  \item 平台: Linux
-  \item 开发: xxx
+  \item \textbf{语言}: 熟练使用C，C++，Python，Go等语言，熟练使用LaTeX进行学术写作，熟悉Bash脚本的编写,有一定Java使用经验
+  % ,复现过部分C++STL容器实现和人工智能算法，能够编写简单的Java和Rust代码
+  ；
+  \item \textbf{平台}: 熟练使用GNU/Linux作为桌面和服务器系统，熟练使用命令行进行系统维护和项目部署；
+  \item \textbf{工具}: 熟练使用Git，Docker，CMake等项目开发和运维工具，熟悉DeepSeek 
+ etc,MCPServer等AI生态工具，熟悉gdb进行调试，有Qt开发经验；
+  \item \textbf{Web}: 熟练使用Python，Go语言搭建后端服务器，熟悉使用JavaScript完成简单前端界面和UI设计，熟悉对高性能消息中间件的接入的流程，熟悉在多服务下接口调用和服务器网络通信原理；
+  % \item \textbf{算法}： CodeForce最高1400， Leetcode200+, 熟悉基本的机器学习算法
 \end{itemize}
 
-\section{\faHeartO\ 获奖情况}
-\datedline{\textit{第一名}, xxx 比赛}{2013 年6 月}
-\datedline{其他奖项}{2015}
-
-\section{\faInfo\ 其他}
-% increase linespacing [parsep=0.5ex]
-\begin{itemize}[parsep=0.5ex]
-  \item 技术博客: http://blog.yours.me
-  \item GitHub: https://github.com/username
-  \item 语言: 英语 - 熟练(TOEFL xxx)
-\end{itemize}
+\section{\faHeartO\ 在校经历}
+\datedline{\textit{进入ACM/ICPC暑期校集训队}有半年的训练和学习经历,}{2023 年7 月} 
+\datedline{\textit{2023年全国大学生电子商务“创新、创意及创业”挑战赛校赛二等奖},}{2024 年3 月} 
+\datedline{\textit{2024年亚太地区数学建模大赛APMCM三等奖}选题有关于水下图像增强的视觉技术,}{2024年11月} 
+\datedline{\textit{校专项奖学金},}{2023年-2024年} 
+% \section{\faInfo\ 其他}
+% % increase linespacing [parsep=0.5ex]
+% \begin{itemize}[parsep=0.5ex]
+%     % \item 
+% \end{itemize}
 
 %% Reference
 %\newpage
