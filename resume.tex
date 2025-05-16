@@ -1,80 +1,75 @@
-% !TEX program = xelatex
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
 
 \documentclass{resume}
-%\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
-%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix}
+\usepackage{cite}
 
 \begin{document}
-\pagenumbering{gobble} % suppress displaying page number
+\pagenumbering{gobble}
 
-\name{Bin Yuan}
+\name{Qingyun Xie}
 
 \basicInfo{
-  \email{yuanbin2014@gmail.com} \textperiodcentered\ 
-  \phone{(+86) 131-221-87xxx} \textperiodcentered\ 
-  \linkedin[billryan8]{https://www.linkedin.com/in/billryan8}}
+  \email{kytolly.xqy@gmail.com} \textperiodcentered\ 
+  \phone{(+86) 198-2812-7947} \textperiodcentered\ 
+  \github[Kytolly]{https://github.com/Kytolly} \textperiodcentered\
+  \homepage[kytolly.blog]{ https://kytolly.blog/}  \textperiodcentered\
+  \faTransgender[Male]  \textperiodcentered\
+  \faBirthdayCake[Jan. 2005]
+}
 
 \section{\faGraduationCap\ Education}
-\datedsubsection{\textbf{Shanghai Jiao Tong University (SJTU)}, Shanghai, China}{2013 -- Present}
-\textit{Master student} in Electronics Engineering (EE), expected March 2016
-\datedsubsection{\textbf{Xidian University}, Shaanxi, China}{2009 -- 2013}
-\textit{B.S.} in Electronics Engineering (EE)
+\datedsubsection{\textbf{University of Electronic Science and Technology of China}, Chengdu, Sichuan}{2022 -- 2026}
+\textit{B.S. Candidate} \textbf{Major} Computer Science and Technology \textbf{Minor} Data Science and Big Data Technology\\
+\textit{"Internet+" Compound Elite Talent Double Degree Training Program}\\
+\textbf{GPA}: 3.8/4.0 \ \textbf{IELTS}: NG
 
-\section{\faUsers\ Experience}
-\datedsubsection{\textbf{FLAG Inc.} California, America}{2012 -- Present}
-\role{Summer Intern}{Manager: xxx}
-Brief introduction: xxx.
+\section{\faUsers\ Internship}
+\datedsubsection{\textbf{Sichuan Huadi Information Technology Co., Ltd.} (Chengdu)}{July 2024 -- August 2024}
+\role{Big Data Engineer}{System Design Engineer}
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+    \item Built Hadoop distributed file system and deployed Spark computing engine
+    \item Designed IP proxy pool for web crawlers, completed data cleaning/processing/analysis/visualization
 \end{itemize}
 
-\datedsubsection{\textbf{xxx Projects}}{Jan. 2015 -- Present}
-\role{C, Python, Django, Linux}{Individual Projects, collaborated with xxx}
-Brief introduction: xxx
+\datedsubsection{\textbf{Laboratory of Intelligent Collaborative Computing, UESTC}}{April 2025 -- Present}
+\role{Embodied Intelligence Engineer}{System Development Engineer}
 \begin{itemize}
-  \item Implemented xxx feature
-  \item Optimized xxx 5\%
-  \item xxx
+    \item Built SSTKG using RedisGraph, implementing LLM retrieval augmentation with KAG and Neo4j
+    \item Configured Unitree robot platform, established integrated testing environment, assisted in open-source paper reproduction
 \end{itemize}
 
-\datedsubsection{\textbf{\LaTeX\ résumé template}}{May. 2015 -- Present}
-\role{\LaTeX, Maintainer}{Individual Projects}
-An elegant \LaTeX\ résumé template, https://github.com/billryan/resume
-\begin{itemize}
-  \item Easy to be further customized or extended
-  \item Full support for unicode characters (e.g. CJK) with \XeLaTeX\
-  \item FontAwesome 4.5.0 support
-\end{itemize}
-
-% Reference Test
-%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
-%An xxx optimized for xxx\cite{verma2015large}
-%\begin{itemize}
-%  \item main contribution
-%\end{itemize}
-
-\section{\faCogs\ Skills}
+\section{\faCode\ Projects}
+\datedsubsection{\textbf{Movie Rating Prediction Model}}{https://github.com/Kytolly/BiasSVD-MovieRecommendation}
 \begin{itemize}[parsep=0.5ex]
-  \item Programming Languages: C == Python > C++ > Java
-  \item Platform: Linux
-  \item Development: Web, xxx
+    \item Implemented latent factor collaborative filtering model using TensorFlow with 30M+ dataset
+    \item Achieved 0.7 MSE through cross-validation, replicating original paper results
 \end{itemize}
 
-\section{\faHeartO\ Honors and Awards}
-\datedline{\textit{\nth{1} Prize}, Award on xxx }{Jun. 2013}
-\datedline{Other awards}{2015}
-
-\section{\faInfo\ Miscellaneous}
-\begin{itemize}[parsep=0.5ex]
-  \item Blog: http://your.blog.me
-  \item GitHub: https://github.com/username
-  \item Languages: English - Fluent, Mandarin - Native speaker
+\datedsubsection{\textbf{Blockchain CLI Tool}}{https://github.com/Kytolly/BlockchainCLI}
+\begin{itemize}
+    \item Implemented PoW, persistence (BoltDB), indexing, Merkle trees, digital signatures, P2P network (WebSocket)
 \end{itemize}
 
-%% Reference
-%\newpage
-%\bibliographystyle{IEEETran}
-%\bibliography{mycite}
+\datedsubsection{\textbf{Other Technical Projects}}{}
+\begin{itemize}[parsep=0.5ex] 
+    \item DRL-based quantitative trading model over 23\% annualized return and 100\% cumulative return rate, outperforming SSE50 benchmark
+    \item Optimized PPO-based AI agent for Tencent's "Honor of Kings", won 1st place in campus arena
+\end{itemize}
+
+\section{\faCogs\ Technical Skills}
+\begin{itemize}
+    \item \textbf{Languages}: Proficient in C/C++/Python/Go, Experienced with LaTeX/Bash/Java
+    \item \textbf{Platforms}: Linux system administration and server deployment
+    \item \textbf{Tools}: Git/Docker/CMake/gdb, AI tools (DeepSeek etc./MCPServer)
+    \item \textbf{Web}: Backend development (Go/Python), Frontend basics (JavaScript, Vue, Electron), High-performance middleware(ZeroMQ)
+    % \item \textbf{Algorithm}: CodeForce 1400, Leetcode 200+, Experienced with Machine Learning
+\end{itemize}
+
+\section{\faTrophy\ Honors}
+\datedline{\textit{ACM/ICPC Summer Training Program Participant}}{July 2023}
+\datedline{\textit{2nd Prize}, National E-commerce Innovation Competition (University Level)}{Mar. 2024}
+\datedline{\textit{APMCM Third Prize}, Underwater Image Enhancement Project}{Nov. 2024}
+\datedline{\textit{University Special Scholarship}}{2023--2024}
 \end{document}
